@@ -1,5 +1,30 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  div.st-container
+    input(type="radio", name="radio-set", checked="checked", id="st-control-1")
+    a(href="#st-panel-1") JZ HUANG
+    input(type="radio", name="radio-set", id="st-control-2")
+    a(href="#st-panel-2") ABOUT
+    input(type="radio", name="radio-set", id="st-control-3")
+    a(href="#st-panel-3") PORTFOLIO
+    input(type="radio", name="radio-set", id="st-control-4")
+    a(href="#st-panel-4") CONTACT
+
+    div.st-scroll
+      section.st-panel(id="st-panel-1")
+        div.st-deco(data-icon="J")
+        h2 JZ HUANG
+        p Photographer, Dancer, B&W Lover
+      section(class="st-color st-panel",id="st-panel-2")
+        div.st-deco(data-icon="A")
+        h2 ABOUT
+        p ALL FUCKIN ME
+      section.st-panel(id="st-panel-3")
+        div.st-deco(data-icon="P")
+        h2 PORTFOLIO
+        p 
+      section(class="st-color st-panel",id="st-panel-4")
+        div.st-deco(data-icon="C")
+        h2 CONTACT
+        p 
